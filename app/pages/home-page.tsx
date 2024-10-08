@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
@@ -117,9 +118,9 @@ export default function HomePage() {
             </div>
             <div className="flex items-center">
               <form onSubmit={handleSearch} className="relative">
-                <Input 
-                  type="search" 
-                  placeholder="Search videos..." 
+                <Input
+                  type="search"
+                  placeholder="Search videos..."
                   className="w-full"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
